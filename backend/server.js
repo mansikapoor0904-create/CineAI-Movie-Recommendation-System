@@ -312,6 +312,6 @@ app.get("/api/movies/search", async (req, res) => {
 // START SERVER
 // ------------------------------------
 
-app.listen(PORT, () => {
-  console.log(`CineAI backend running on http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`CineAI backend running on port ${PORT}`);
 });
